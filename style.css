@@ -1,0 +1,128 @@
+/* general stuff */
+
+body {
+  padding: 0;
+  margin: 0;
+}
+ 
+* {
+  vertical-align: top;
+}
+ 
+/* typography */
+ 
+h1 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+ 
+ 
+/* utility classes */
+ 
+.container {
+  margin: 0 auto;
+  width: 940px;
+}
+ 
+/* header */
+ 
+header {
+  min-width: 940px;
+  height: 100px;
+  margin-bottom: 40px;
+  background: linear-gradient(to bottom, #00b7ea 0%,#009ec3 100%); /* W3C */
+}
+
+header h1 {
+  color: white;
+  text-align: center;
+  font-family: 'Spirax', Helvetica, sans-serif;
+  padding-top: 25px;
+}
+
+/* basic styling for CSS style page */
+ 
+body {
+  background: #eae5e5;
+}
+
+h2 {
+  color: #4f4f4f;
+  font-family: Helvetica, sans-serif;
+}
+
+.subhead {
+  border-bottom: 1px solid grey;
+  padding-left: 20px;
+}
+
+/* buttons */
+
+.buttons {
+  border: 1px solid grey;
+  min-width: 940px;
+}
+
+.button-one {
+	width: 145px;
+	padding: 8px 0px;
+	margin-bottom: 10px;
+	text-align: center;
+	background: #626363;
+	border-radius: 5px;
+	border: 1px solid #303030;
+	box-shadow: inset 0px 1px 3px -1px #aeafaf;
+  margin-left: 20px;
+  margin-top: 15px;
+}
+
+.button-one a {
+  color: white;
+  font-style: 'Futura', Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+.button-two {
+  background: linear-gradient(to bottom, #ffd65e 32%,#febf04 75%); /* W3C */;
+  width: 278px;
+  color: white;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 10px 0px;
+  font-size: 25px;
+  border: 1px #93342c solid;
+  text-align: center;
+  box-shadow: inset 0px 2px 3px 0px white;
+  margin-left: 20px;
+}
+
+.button-two a {
+  text-decoration: none;
+  color: white;
+}
+
+.input-button {
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.input-button .search-field {
+  border: 1px grey solid;
+  box-shadow: 1px 1px 1px grey;
+  width: 135px;
+  height: 40px;
+  font-size: 12px;
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+/* lists */
+
+.lists {
+  border: 1px solid grey;
+  margin-top: 25px;
+}
