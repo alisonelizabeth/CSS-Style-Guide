@@ -25,6 +25,7 @@ a {
 .container {
   margin: 0 auto;
   width: 940px;
+  padding-bottom: 20px;
 }
  
 /* header */
@@ -49,80 +50,185 @@ body {
   background: #eae5e5;
 }
 
-h2 {
-  color: #4f4f4f;
+.style-box {
+  width: 940px;
+  border: 1px grey solid;
+  margin-top: 25px;
+  padding-bottom: 20px;
+}
+
+.subhead h2 {
+  padding: 5px 20px;
+  color: #944A71;
   font-family: Helvetica, sans-serif;
+  margin: 0px;
+}
+
+.style-info h3 {
+  color: #5b4e4e;
 }
 
 .subhead {
   border-bottom: 1px solid grey;
+}
+
+.style-info {
   padding-left: 20px;
+}
+
+.notes {
+  font-style: italic;
+  padding: 10px 30px 0px 30px;
+  font-size: 16px;
 }
 
 /* buttons */
 
-.buttons {
-  border: 1px solid grey;
-  min-width: 940px;
-}
-
-.button-one {
-	width: 145px;
-	padding: 8px 0px;
-	margin-bottom: 10px;
-	text-align: center;
-	background: #626363;
-	border-radius: 5px;
-	border: 1px solid #303030;
-	box-shadow: inset 0px 1px 3px -1px #aeafaf;
-  margin-left: 20px;
-  margin-top: 15px;
-}
-
-.button-one a {
-  color: white;
-  font-style: 'Futura', Helvetica, sans-serif;
-  font-size: 15px;
-}
-
-.button-two {
-  background: linear-gradient(to bottom, #ffd65e 32%,#febf04 75%); /* W3C */;
-  width: 278px;
+.button {
+  font-family: 'Futura', Helvetica, sans-serif;
   color: white;
   border-radius: 5px;
   margin-top: 20px;
-  padding: 10px 0px;
-  font-size: 25px;
-  border: 1px #93342c solid;
   text-align: center;
   box-shadow: inset 0px 2px 3px 0px white;
-  margin-left: 20px;
+  margin-left: 20px; 
+  text-shadow: 1px 1px 5px grey;
 }
 
-.button-two a {
-  text-decoration: none;
-  color: white;
+.button.large {
+  width: 200px;
+  padding: 10px 0px;
+  font-size: 25px;
 }
 
-.input-button {
-  margin-top: 15px;
-  margin-left: 20px;
-  margin-bottom: 20px;
+.button.medium {
+  width: 120px;
+  padding: 8px 0px;
+  font-size: 16px;
 }
 
-.input-button .search-field {
-  border: 1px grey solid;
-  box-shadow: 1px 1px 1px grey;
-  width: 135px;
-  height: 40px;
+.button.small {
+  width: 80px;
+  padding: 5px 0px;
   font-size: 12px;
-  border-radius: 5px;
-  padding-left: 10px;
 }
 
-/* lists */
+.button.yellow {
+  background: #ffe314 linear-gradient(to bottom, #ffd65e 32%,#febf04 75%); /* W3C */;
+  border: 1px #FFC720 solid;
+  -webkit-transition: all 1s ease;
+}
 
-.lists {
-  border: 1px solid grey;
-  margin-top: 25px;
+.button.blue {
+  background: #2bbbff linear-gradient(to bottom, #87e0fd 0%,#53cbf1 40%,#05abe0 100%); /* W3C */
+  border: 1px rgba(33, 123, 151, 0.93) solid;
+  -webkit-transition: all 1s ease;
+}
+
+.button.red {
+  background: tomato linear-gradient(to bottom, #ff670f 0%,#ff670f 100%); /* W3C */
+  border: 1px #FF4B4B solid;
+  -webkit-transition: all 1s ease;
+}
+
+.button.large.red.hover:hover {
+  background: #ff8300;
+}
+
+.button.large.yellow.hover:hover {
+  background: #ffe62d;
+}
+
+.button.large.blue.hover:hover {
+  background: #63bdf2;
+}
+
+.button.active {
+  position: relative;
+}
+
+.button.hover:hover{
+  -webkit-transition: all 1s ease;
+}
+
+.button.active:active {
+  top: 1px;
+  -webkit-transition: all .3s ease;
+}
+
+.button.large.yellow.active:active {
+  background: #ffe62d;
+  box-shadow: inset 0px 2px 5px #FFC720;
+}
+
+.button.large.blue.active:active {
+  background: #63bdf2;
+  box-shadow: inset 0px 2px 5px #007fff;
+}
+
+.button.large.red.active:active {
+  background: #ff8300;
+  box-shadow: inset 0px 2px 5px #ff5000;
+}
+
+/* css animations */
+
+figure img {
+  width: 400px;
+}
+
+figure { 
+  display: block; 
+  position: relative; 
+  overflow: hidden; 
+}
+
+figcaption { 
+  font-family: 'Futura', Helvetica, sans-serif;
+  position: absolute; 
+  background: rgba(0,0,0,0.75); 
+  color: white; 
+  padding: 15px 152.5px; 
+
+  opacity: 0;
+  top: 0; 
+  left: -30%;
+  -webkit-transition: all 0.6s ease;
+}
+
+figure:hover figcaption {
+  opacity: 1;
+  left: 0;
+}
+
+
+/* headings */
+
+.headings {
+  padding-top: 20px;
+  color: #5b4e4e;
+}
+
+.headings h1 {
+  font-size: 60px;
+}
+
+.headings h2 {
+  font-size: 50px;
+}
+
+.headings h3 {
+  font-size: 40px;
+}
+
+.headings h4 {
+  font-size: 35px;
+}
+
+.headings h5 {
+  font-size: 30px;
+}
+
+.headings h6 {
+  font-size: 25px;
 }
