@@ -232,3 +232,77 @@ figure:hover figcaption {
 .headings h6 {
   font-size: 25px;
 }
+
+
+/* modal */
+
+.modal {
+  background: rgba(0,0,0,0.0); 
+  z-index:2;
+  top: 0; 
+  left: 0;
+  bottom:0;
+  right:0;
+  height: 0;
+  overflow:hidden;
+}
+
+.modal-active {
+  position: fixed;
+  height: auto;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.click-modal {
+  width: 300px;
+  padding: 10px 40px;
+
+}
+
+.click-modal span {
+  text-align: center;
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+}
+
+.click-modal .click-here {
+  color: blue;
+  font-weight: bold;
+}
+
+.click-modal .click-here:hover {
+  text-decoration: underline;
+}
+
+.modal-box {
+  text-align: center;
+  padding: 10px;
+  opacity: 0;
+  height: 150px;
+  width: 300px;
+  border-radius: 4px;
+  background: rgb(189, 242, 252);
+  border: 1px #4386A5 solid;
+  margin: 200px auto 0;
+  box-shadow: inset 1px 1px 5px grey;
+  -webkit-transition: all .5s ease;
+}
+
+.modal-active .modal-box {
+  opacity: 1;
+}
+
+
+.button.blue.small.active {
+  position: relative;
+  margin: 0px 110px;
+}
+
+.modal-box p {
+  margin: 10px 0px 30px;
+}
+
+.modal-box h2 {
+  margin: 10px 0px 0px 0px;
+}
